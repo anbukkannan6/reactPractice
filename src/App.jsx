@@ -11,6 +11,7 @@ import ReactHookComp from './ReactHookComp'
 import ReviceComp from './ReviceComp'
 import LoginComp from './LoginComp'
 import TodoListComp from './TodoListComp'
+import RouterComp from './RouterComp'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       {/* <ReviceComp/> */}
       {/* <LoginComp/> */}
       {/* <TodoListComp/> */}
+      <RouterComp/>
 
 
 
