@@ -11,7 +11,8 @@ import ReactHookComp from './ReactHookComp'
 import ReviceComp from './ReviceComp'
 import LoginComp from './LoginComp'
 import TodoListComp from './TodoListComp'
-import RouterComp from './RouterComp'
+// import StaticImportComp from './StaticImportComp'
+import DynamicImport from "./DynamicImport"
 
 
 function App() {
@@ -30,7 +31,9 @@ function App() {
       {/* <ReviceComp/> */}
       {/* <LoginComp/> */}
       {/* <TodoListComp/> */}
-      <RouterComp/>
+      {/* <StaticImportComp/> */}
+      <DynamicImport/>
+      
 
 
 
