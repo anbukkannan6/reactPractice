@@ -22,7 +22,7 @@ export default function LoginComp() {
         password:""
     }})
 
-    console.log(errors);
+    
 
 
     return (

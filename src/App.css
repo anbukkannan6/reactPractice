@@ -1,0 +1,34 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    align-items: center;
+
+}
+
+span{
+    padding-left: 10px;
+}
+
+ul {
+    
+    display: flex;  
+    
+    
+}
+
+ul>li{
+    list-style: none;
+    padding: 10px;
+}
+
+/* !FOOTER DESIGN */
+
+.footerBar{
+    text-align: center;
+}
+
+/* ! ABOUT PAGE DESIGN */
+.aboutDiv{
+    text-align: center;
+}
