@@ -6,19 +6,24 @@ import AboutComp from "./AboutComp";
 import LoginComp from "./LoginComp";
 // import {createBrowserRouter,BrowserRouter,Route,Routes,Link,NavLink, createBrowserRouter} from "react-router-dom"
 import { Outlet } from "react-router-dom"
+
 // import ContextProvide from "./config/context/ContextProvide";
+
 // !Outlet is an component which the childrends of react router is passing
-import { userContext,authenticatContext } from "./config/context/context";
+
+import { userContext, authenticatContext } from "./config/context/context";
 
 // *Simply wrap the components with <CONTEXTNAME.PROVIDER VALUE={}>    <CONTEXTNAME.PROVIDER>
+import { Provider } from "react-redux";
+import store from "./config/store";
 
 
 export default function HomeComp() {
 
-    const [user, setUser] = useState( {
-            name: "Dummy",
-            email: "dummy@gmail.com"
-        }
+    const [user, setUser] = useState({
+        name: "Dummy",
+        email: "dummy@gmail.com"
+    }
     )
 
 
@@ -46,20 +51,20 @@ export default function HomeComp() {
             {/* 
         <h1>🚀WELCOME TO HOME PAGE!❤️</h1> */}
 
-            <userContext.Provider value={{
+            {/* <userContext.Provider value={{
                 user: user
             }}>
-                <authenticatContext.Provider value={"Updated Data"}>
-                
+                <authenticatContext.Provider value={"Updated Data"}> */}
+            <Provider store={store}>
                 <NavbarComp />
                 <Outlet />
                 <FooterComp />
-                    
-                </authenticatContext.Provider>
-            </userContext.Provider>
+
+            </Provider>
 
 
-
+            {/* </authenticatContext.Provider>
+            </userContext.Provider> */}
         </>
     )
 }

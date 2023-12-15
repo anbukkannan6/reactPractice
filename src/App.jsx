@@ -19,6 +19,7 @@ import {createBrowserRouter,RouterProvider} from "react-router-dom"
 import ProductComp from './ProductComp'
 import AboutComp from './AboutComp'
 import ErrorComp from './ErrorComp'
+import CartComp from './CartComp'
 
 
 
@@ -48,7 +49,9 @@ function App() {
         {
           path:"/products",
           element:<ProductComp/>,
-          
+        },{
+          path:"/cart",
+          element:<CartComp/>
         },
         {
           path:"/products/:id",

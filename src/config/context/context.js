@@ -11,9 +11,7 @@ export const userContext = createContext(
             name: "anbukannan",
             email: "anbu@gmail.com"
         }
-
     }
-
 )
 export const authenticatContext = createContext("Default data in context")
 
